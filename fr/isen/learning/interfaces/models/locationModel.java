@@ -1,4 +1,4 @@
-package fr.isen.learning-availability.interfaces.models;
+package fr.isen.learning.interfaces.models;
 
 
 public class locationModel {
