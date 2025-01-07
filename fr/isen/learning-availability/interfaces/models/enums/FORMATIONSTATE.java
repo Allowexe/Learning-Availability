@@ -1,4 +1,4 @@
-package fr.isen.LearningNAvailability.interfaces.models.enums;
+package fr.isen.learning-availability.interfaces.models.enums;
 
 
 public enum FORMATIONSTATE {

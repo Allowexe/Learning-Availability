@@ -1,4 +1,4 @@
-package fr.isen.LearningNAvailability.interfaces.models;
+package fr.isen.learning-availability.interfaces.models;
 
 
 public class locationModel {
@@ -8,6 +8,6 @@ public class locationModel {
 
     private String addressId;
 
-    private boolean availability;
+    private int availability;
 
 }

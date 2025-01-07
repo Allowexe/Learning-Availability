@@ -1,7 +1,7 @@
-package fr.isen.LearningNAvailability.interfaces.models;
+package fr.isen.learning-availability.interfaces.models;
 
 import java.util.Date;
-import fr.isen.LearningNAvailability.interfaces.models.enums.FORMATIONSTATE;
+import fr.isen.learning-availability.interfaces.models.enums.FORMATIONSTATE;
 
 public class formationModel {
     private String formationId;

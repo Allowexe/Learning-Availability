@@ -1,6 +1,6 @@
-package fr.isen.LearningNAvailability.interfaces.services;
+package fr.isen.learning-availability.interfaces.services;
 
-import fr.isen.LearningNAvailability.interfaces.models.locationModel;
+import fr.isen.learning-availability.interfaces.models.locationModel;
 
 public interface locationService {
     locationModel getLocation();

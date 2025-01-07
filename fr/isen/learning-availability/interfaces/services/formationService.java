@@ -1,6 +1,6 @@
-package fr.isen.LearningNAvailability.interfaces.services;
+package fr.isen.learning-availability.interfaces.services;
 
-import fr.isen.LearningNAvailability.interfaces.models.formationModel;
+import fr.isen.learning-availability.interfaces.models.formationModel;
 
 public interface formationService {
     formationModel getFormation();
