@@ -1,4 +1,4 @@
-﻿CREATE DATABASE IF NOT EXISTS projet;
+CREATE DATABASE IF NOT EXISTS projet;
 USE projet;
 
 
@@ -546,4 +546,5 @@ CREATE TABLE `purchase` (
 );
 
 INSERT INTO `purchase` VALUES ('0ee4800f-e69f-4','2024-05-29',92.6,17,'pending','77cf4a22-2de7-49d5-9f70-a539994ead33'),('1947c848-8122-4','2024-02-17',427.25,41,'confirmed','8a3ffa99-f53a-4778-91e2-feedc1b40416'),('1fd50eb8-b8c4-4','2024-10-14',78.21,30,'delivered','b147be12-c903-45f5-be5f-2406dfa670b6'),('23838f15-1676-4e','2024-06-21',436.51,37,'in_delivery','dfae690f-1e50-4763-9225-a2634454b216'),('38bf3233-9028-4','2024-02-20',433.44,4,'cancelled','0b188c3e-c9d2-464b-9efa-c00c59073faf'),('3ab47ad6-044d-4','2024-10-26',57.46,14,'pending','53f83c9c-40df-4f71-97a4-563204a2ff01'),('650599a6-8b5e-4','2024-01-19',32.68,48,'in_delivery','69d47814-9742-4bae-b3da-8515b4d2e5f4'),('7a538497-81df-42','2024-06-02',147.78,11,'confirmed','58d6cd08-c674-45c3-a3b0-1f96398f43fa'),('bd7a9f8c-9a4c-4','2024-06-11',246.57,30,'pending','36f88fb6-275e-45eb-a1b8-ef0f4adcf7c6'),('ea2ad64f-8f2e-4','2024-06-20',365.07,48,'confirmed','abb64834-2cfd-4080-9b45-c22b8adb6ab8');
+
 
