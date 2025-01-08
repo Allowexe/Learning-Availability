@@ -223,7 +223,7 @@ INSERT INTO token (token_id, date_created, date_expiration, status_token) VALUES
 INSERT INTO user_profile (profile_id, `description`, access_level) 
 VALUES 
     ('admin', 'Administrators with full access', '1'),
-    ('CE', 'Comité d\'entreprise with limited management rights', '2'),
+    ('CE', 'Comité d entreprise with limited management rights', '2'),
     ('member', 'Regular members with basic access rights', '3');
 
 INSERT INTO membership (membership_id, address_id, profile_id, token_id, username, passwd, date_created, date_last_connection, status_user) VALUES
