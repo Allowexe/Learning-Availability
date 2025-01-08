@@ -79,7 +79,7 @@ public class formationModel {
     }
 
     public void setState(FORMATIONSTATE state) {
-        this.state = state;
+        this.state=state;
     }
 
 
