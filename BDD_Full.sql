@@ -473,7 +473,6 @@ CREATE TABLE location (
     addressId VARCHAR(255),
     availability INTEGER,
     FOREIGN KEY (addressId) REFERENCES address_model(uuid) ON DELETE SET NULL
-
 );
 
 -- Table for formationModel
