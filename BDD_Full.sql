@@ -149,7 +149,7 @@ VALUES
 ('c8bb4f84-d394-40c9-jklo-9b292f27f4ff','c8bb4f84-d394-40c9-b215-9b292f27f4ff','Fournier','Éric','eric.fournier@example.com',722334455,'Directeur technique',132345678);
 
 CREATE TABLE IF NOT EXISTS `address_model` (
-  `uuid` VARCHAR(1024),
+  `uuid` VARCHAR(36) PRIMARY KEY,
   `number` BIGINT,
   `street` VARCHAR(1024),
   `postal_code` BIGINT,
@@ -502,8 +502,8 @@ CREATE TABLE formationavailability (
 
 -- Insert test data for locationModel
 INSERT INTO location (locationId, name, addressId, availability) VALUES
-('9f98e66a-0494-4c07-8cee-73c0122738a8', 'Location A', 'addr-001', 50),
-('4bfcb9f9-9a93-4936-9862-67b400a66119', 'Location B', 'addr-002', 30);
+('9f98e66a-0494-4c07-8cee-73c0122738a8', 'Location A', 'a8dff5c7-8d88-4fcb-8d24-e4a09de05e36'', 50),
+('4bfcb9f9-9a93-4936-9862-67b400a66119', 'Location B', 'ecb9d879-9a9b-4d85-b0b2-5867e827efb9', 30);
 
 -- Insert test data for formationModel
 INSERT INTO formation (formationId, name, durationInHours, startDate, endDate, locationId, state) VALUES
