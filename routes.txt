@@ -1,0 +1,22 @@
+/status        GET (produces:text/plain;charset=UTF-8)
+ /locations/{locationId}     DELETE 
+/locations/{id}/{name}/{addressid}/{availability}        POST (produces:/)     
+/locations/{id}/{name}/{addressid}/{availability}          PUT (produces:/) 
+/locations/{id}     GET (produces:application/json) 
+/locations GET (produces:application/json) 
+/formations/{id}/{name}/{duration}/{startDate}/{endDate}/{locationId}/{state}
+ POST (produces:application/json) 
+/formations/{id}/{name}/{duration}/{startDate}/{endDate}/{locationId}/{state}
+ PUT (produces:application/json)
+ /formations/{id}     DELETE      
+ /formations/{id}     GET (produces:application/json)
+ /formations    GET (produces:application/json) 
+/availabilities/{id}   DELETE
+ /availabilities/{id} GET (produces:application/json) /availabilities/{availabilityId}/{formationId}/{year}/{timeline}
+ POST (produces:application/json) 
+/availabilities/{availabilityId}/{formationId}/{year}/{timeline}
+ PUT  (produces:application/json) 
+/availabilities 
+GET (produces:application/json)
+/locations/{id}/{name}/{addressid}/{availability} 
+PUT (produces:/)
