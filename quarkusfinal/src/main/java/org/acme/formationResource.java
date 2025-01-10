@@ -39,7 +39,7 @@ public class formationResource {
         return formationService.GetFormationById(id);
     }
 
-    @POST
+    @PUT
     @Produces(MediaType.APPLICATION_JSON)
     @Path("/{id}/{name}/{duration}/{startDate}/{endDate}/{locationId}/{state}")
     public Response InsertFormation(
@@ -69,7 +69,7 @@ public class formationResource {
         }
     }
 
-    @PUT
+    @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Path("/{id}/{name}/{duration}/{startDate}/{endDate}/{locationId}/{state}")
     public Response UpdateFormation(

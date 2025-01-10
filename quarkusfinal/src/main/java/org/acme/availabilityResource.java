@@ -41,7 +41,7 @@ public class availabilityResource {
         }
     }
 
-    @POST
+    @PUT
     @Path("/{availabilityId}/{formationId}/{year}/{timeline}")
     @Produces(MediaType.APPLICATION_JSON)
     public Response insertAvailability(@PathParam("availabilityId") String availabilityId,
@@ -58,7 +58,7 @@ public class availabilityResource {
         }
     }
 
-    @PUT
+    @POST
     @Path("/{availabilityId}/{formationId}/{year}/{timeline}")
     @Produces(MediaType.APPLICATION_JSON)
     public Response updateAvailability(@PathParam("availabilityId") String availabilityId,

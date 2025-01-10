@@ -30,7 +30,7 @@ public class locationResource {
         return locationService.GetLocationById(id);
     }
 
-    @POST
+    @PUT
     @Produces
     @Path("/{id}/{name}/{addressid}/{availability}")
     public Response InsertLocation(@PathParam("id") String id,
@@ -51,7 +51,7 @@ public class locationResource {
                     .build();
         }
     }
-    @PUT
+    @POST
     @Produces
     @Path("/{id}/{name}/{addressid}/{availability}")
     public Response UpdateLocationByID(@PathParam("id") String id,
