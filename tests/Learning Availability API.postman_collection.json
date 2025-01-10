@@ -1,0 +1,381 @@
+{
+    "info": {
+        "name": "Learning Availability API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": "Collection for testing Learning Availability API endpoints."
+    },
+    "item": [
+        {
+            "name": "Status",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8086/status",
+                    "host": [
+                        "http://localhost:8086"
+                    ],
+                    "path": [
+                        "status"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get Locations",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8086/locations",
+                    "host": [
+                        "http://localhost:8086"
+                    ],
+                    "path": [
+                        "locations"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get Location by ID",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8086/locations/{locationId}",
+                    "host": [
+                        "http://localhost:8086"
+                    ],
+                    "path": [
+                        "locations",
+                        "{{locationId}}"
+                    ],
+                    "variable": [
+                        {
+                            "key": "locationId",
+                            "value": "1"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Delete Location by ID",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8086/locations/{locationId}",
+                    "host": [
+                        "http://localhost:8086"
+                    ],
+                    "path": [
+                        "locations",
+                        "{{locationId}}"
+                    ],
+                    "variable": [
+                        {
+                            "key": "locationId",
+                            "value": "1"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Create Location",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"id\": 1, \"name\": \"Location Name\", \"addressId\": 101, \"availability\": \"Available\"}"
+                },
+                "url": {
+                    "raw": "http://localhost:8086/locations/{id}/{name}/{addressid}/{availability}",
+                    "host": [
+                        "http://localhost:8086"
+                    ],
+                    "path": [
+                        "locations",
+                        "{{id}}",
+                        "{{name}}",
+                        "{{addressid}}",
+                        "{{availability}}"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Update Location",
+            "request": {
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"id\": 1, \"name\": \"Updated Location Name\", \"addressId\": 101, \"availability\": \"Unavailable\"}"
+                },
+                "url": {
+                    "raw": "http://localhost:8086/locations/{id}/{name}/{addressid}/{availability}",
+                    "host": [
+                        "http://localhost:8086"
+                    ],
+                    "path": [
+                        "locations",
+                        "{{id}}",
+                        "{{name}}",
+                        "{{addressid}}",
+                        "{{availability}}"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get All Availabilities",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8086/availabilities",
+                    "host": [
+                        "http://localhost:8086"
+                    ],
+                    "path": [
+                        "availabilities"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get Availability by ID",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8086/availabilities/{id}",
+                    "host": [
+                        "http://localhost:8086"
+                    ],
+                    "path": [
+                        "availabilities",
+                        "{{id}}"
+                    ],
+                    "variable": [
+                        {
+                            "key": "id",
+                            "value": "1"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Delete Availability by ID",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8086/availabilities/{id}",
+                    "host": [
+                        "http://localhost:8086"
+                    ],
+                    "path": [
+                        "availabilities",
+                        "{{id}}"
+                    ],
+                    "variable": [
+                        {
+                            "key": "id",
+                            "value": "1"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Create Availability",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"availabilityId\": 1, \"formationId\": 101, \"otherData\": \"Sample Data\"}"
+                },
+                "url": {
+                    "raw": "http://localhost:8086/availabilities/{availabilityId}/{formationId}/",
+                    "host": [
+                        "http://localhost:8086"
+                    ],
+                    "path": [
+                        "availabilities",
+                        "{{availabilityId}}",
+                        "{{formationId}}"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Update Availability",
+            "request": {
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"availabilityId\": 1, \"formationId\": 101, \"otherData\": \"Updated Data\"}"
+                },
+                "url": {
+                    "raw": "http://localhost:8086/availabilities/{availabilityId}/{formationId}",
+                    "host": [
+                        "http://localhost:8086"
+                    ],
+                    "path": [
+                        "availabilities",
+                        "{{availabilityId}}",
+                        "{{formationId}}"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get All Formations",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8086/formations",
+                    "host": [
+                        "http://localhost:8086"
+                    ],
+                    "path": [
+                        "formations"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get Formation by ID",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8086/formations/{id}",
+                    "host": [
+                        "http://localhost:8086"
+                    ],
+                    "path": [
+                        "formations",
+                        "{{id}}"
+                    ],
+                    "variable": [
+                        {
+                            "key": "id",
+                            "value": "1"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Delete Formation by ID",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8086/formations/{id}",
+                    "host": [
+                        "http://localhost:8086"
+                    ],
+                    "path": [
+                        "formations",
+                        "{{id}}"
+                    ],
+                    "variable": [
+                        {
+                            "key": "id",
+                            "value": "1"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Create Formation",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"id\": 1, \"name\": \"Formation Name\", \"duration\": 120, \"startDate\": \"2025-01-01\"}"
+                },
+                "url": {
+                    "raw": "http://localhost:8086/formations/{id}/{name}/{duration}/{startDate}",
+                    "host": [
+                        "http://localhost:8086"
+                    ],
+                    "path": [
+                        "formations",
+                        "{{id}}",
+                        "{{name}}",
+                        "{{duration}}",
+                        "{{startDate}}"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Update Formation",
+            "request": {
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"id\": 1, \"name\": \"Updated Formation Name\", \"duration\": 150, \"startDate\": \"2025-02-01\"}"
+                },
+                "url": {
+                    "raw": "http://localhost:8086/formations/{id}/{name}/{duration}/{startDate}",
+                    "host": [
+                        "http://localhost:8086"
+                    ],
+                    "path": [
+                        "formations",
+                        "{{id}}",
+                        "{{name}}",
+                        "{{duration}}",
+                        "{{startDate}}"
+                    ]
+                }
+            }
+        }
+    ]
+}
